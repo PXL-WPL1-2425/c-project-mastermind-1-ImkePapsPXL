@@ -5,37 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:mastermind"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="title" Height="450" Width="800">
     <Grid>
         <TextBox Name="firstCodeBox" HorizontalAlignment="Left" Margin="67,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111" Height="102"/>
-        <Button Name="checkCodeButton" Content="Check code" HorizontalAlignment="Left" Margin="351,311,0,0" VerticalAlignment="Top"/>
+        <Button Name="checkCodeButton" Content="Check code" HorizontalAlignment="Left" Margin="351,311,0,0" VerticalAlignment="Top" Click="checkCodeButton_Click"/>
         <TextBox Name="fourthCodeBox" HorizontalAlignment="Left" Margin="593,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111" Height="102"/>
         <TextBox Name="thirdCodeBox" HorizontalAlignment="Left" Margin="422,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111" Height="102"/>
         <TextBox Name="secondCodeBox" HorizontalAlignment="Left" Margin="247,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111" Height="102"/>
         <RadioButton Name="firstCodeRedButton" Content="Rood" HorizontalAlignment="Left" Margin="67,171,0,0" VerticalAlignment="Top" Checked="firstCodeRedButton_Checked"/>
-        <RadioButton Name="fourthCodeRedButton" Content="Rood" HorizontalAlignment="Left" Margin="593,170,0,0" VerticalAlignment="Top"/>
-        <RadioButton Name="thirdCodeRedButton" Content="Rood" HorizontalAlignment="Left" Margin="422,167,0,0" VerticalAlignment="Top"/>
-        <RadioButton Name="secondCodeRedButton" Content="Rood" HorizontalAlignment="Left" Margin="247,170,0,0" VerticalAlignment="Top"/>
+        <RadioButton Name="fourthCodeRedButton" Content="Rood" HorizontalAlignment="Left" Margin="593,170,0,0" VerticalAlignment="Top" Checked="fourthCodeRedButton_Checked"/>
+        <RadioButton Name="thirdCodeRedButton" Content="Rood" HorizontalAlignment="Left" Margin="422,167,0,0" VerticalAlignment="Top" Checked="thirdCodeRedButton_Checked"/>
+        <RadioButton Name="secondCodeRedButton" Content="Rood" HorizontalAlignment="Left" Margin="247,170,0,0" VerticalAlignment="Top" Checked="secondCodeRedButton_Checked"/>
         <RadioButton Name="firstCodeBlueButton" Content="Blauw" HorizontalAlignment="Left" Margin="67,151,0,0" VerticalAlignment="Top" Checked="firstCodeBlueButton_Checked"/>
-        <RadioButton Name="secondCodeBlueButton" Content="Blauw" HorizontalAlignment="Left" Margin="247,147,0,0" VerticalAlignment="Top"/>
-        <RadioButton Name="thirdCodeBlueButton" Content="Blauw" HorizontalAlignment="Left" Margin="422,147,0,0" VerticalAlignment="Top"/>
-        <RadioButton Name="fourthCodeBlueButton" Content="Blauw" HorizontalAlignment="Left" Margin="593,144,0,0" VerticalAlignment="Top"/>
+        <RadioButton Name="secondCodeBlueButton" Content="Blauw" HorizontalAlignment="Left" Margin="247,147,0,0" VerticalAlignment="Top" Checked="secondCodeBlueButton_Checked"/>
+        <RadioButton Name="thirdCodeBlueButton" Content="Blauw" HorizontalAlignment="Left" Margin="422,147,0,0" VerticalAlignment="Top" Checked="thirdCodeBlueButton_Checked"/>
+        <RadioButton Name="fourthCodeBlueButton" Content="Blauw" HorizontalAlignment="Left" Margin="593,144,0,0" VerticalAlignment="Top" Checked="fourthCodeBlueButton_Checked"/>
         <RadioButton x:Name="firstCodeYellowButton" Content="Geel" HorizontalAlignment="Left" Margin="67,191,0,0" VerticalAlignment="Top" Checked="firstCodeYellowButton_Checked"/>
         <RadioButton x:Name="firstCodeWhiteButton" Content="Wit" HorizontalAlignment="Left" Margin="67,211,0,0" VerticalAlignment="Top" Checked="firstCodeWhiteButton_Checked"/>
         <RadioButton x:Name="firstCodeOrangeButton" Content="Oranje" HorizontalAlignment="Left" Margin="67,231,0,0" VerticalAlignment="Top" Checked="firstCodeOrangeButton_Checked"/>
         <RadioButton x:Name="firstCodeGreenButton" Content="Groen" HorizontalAlignment="Left" Margin="66,252,0,0" VerticalAlignment="Top" Checked="firstCodeGreenButton_Checked"/>
-        <RadioButton x:Name="fourthCodeYellowButton" Content="Geel" HorizontalAlignment="Left" Margin="593,191,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="thirdCodeYellowButton" Content="Geel" HorizontalAlignment="Left" Margin="422,191,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="secondCodeYellowButton" Content="Geel" HorizontalAlignment="Left" Margin="247,191,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="fourthCodeWhiteButton" Content="Wit" HorizontalAlignment="Left" Margin="593,211,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="thirdCodeWhiteButton" Content="Wit" HorizontalAlignment="Left" Margin="422,214,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="secondCodeWhiteButton" Content="Wit" HorizontalAlignment="Left" Margin="247,211,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="fourthtCodeOrangeButton" Content="Oranje" HorizontalAlignment="Left" Margin="593,231,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="thirdCodeOrangeButton" Content="Oranje" HorizontalAlignment="Left" Margin="422,231,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="secondCodeOrangeButton" Content="Oranje" HorizontalAlignment="Left" Margin="247,231,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="fourthCodeGreenButton" Content="Groen" HorizontalAlignment="Left" Margin="593,252,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="thirdCodeGreenButton" Content="Groen" HorizontalAlignment="Left" Margin="422,252,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="secondCodeGreenButton" Content="Groen" HorizontalAlignment="Left" Margin="247,252,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="fourthCodeYellowButton" Content="Geel" HorizontalAlignment="Left" Margin="593,191,0,0" VerticalAlignment="Top" Checked="fourthCodeYellowButton_Checked"/>
+        <RadioButton x:Name="thirdCodeYellowButton" Content="Geel" HorizontalAlignment="Left" Margin="422,191,0,0" VerticalAlignment="Top" Checked="thirdCodeYellowButton_Checked"/>
+        <RadioButton x:Name="secondCodeYellowButton" Content="Geel" HorizontalAlignment="Left" Margin="247,191,0,0" VerticalAlignment="Top" Checked="secondCodeYellowButton_Checked"/>
+        <RadioButton x:Name="fourthCodeWhiteButton" Content="Wit" HorizontalAlignment="Left" Margin="593,211,0,0" VerticalAlignment="Top" Checked="fourthCodeWhiteButton_Checked"/>
+        <RadioButton x:Name="thirdCodeWhiteButton" Content="Wit" HorizontalAlignment="Left" Margin="422,214,0,0" VerticalAlignment="Top" Checked="thirdCodeWhiteButton_Checked"/>
+        <RadioButton x:Name="secondCodeWhiteButton" Content="Wit" HorizontalAlignment="Left" Margin="247,211,0,0" VerticalAlignment="Top" Checked="secondCodeWhiteButton_Checked"/>
+        <RadioButton x:Name="fourthtCodeOrangeButton" Content="Oranje" HorizontalAlignment="Left" Margin="593,231,0,0" VerticalAlignment="Top" Checked="fourthtCodeOrangeButton_Checked"/>
+        <RadioButton x:Name="thirdCodeOrangeButton" Content="Oranje" HorizontalAlignment="Left" Margin="422,231,0,0" VerticalAlignment="Top" Checked="thirdCodeOrangeButton_Checked"/>
+        <RadioButton x:Name="secondCodeOrangeButton" Content="Oranje" HorizontalAlignment="Left" Margin="247,231,0,0" VerticalAlignment="Top" Checked="secondCodeOrangeButton_Checked"/>
+        <RadioButton x:Name="fourthCodeGreenButton" Content="Groen" HorizontalAlignment="Left" Margin="593,252,0,0" VerticalAlignment="Top" Checked="fourthCodeGreenButton_Checked"/>
+        <RadioButton x:Name="thirdCodeGreenButton" Content="Groen" HorizontalAlignment="Left" Margin="422,252,0,0" VerticalAlignment="Top" Checked="thirdCodeGreenButton_Checked"/>
+        <RadioButton x:Name="secondCodeGreenButton" Content="Groen" HorizontalAlignment="Left" Margin="247,252,0,0" VerticalAlignment="Top" Checked="secondCodeGreenButton_Checked"/>
 
     </Grid>
 </Window>
