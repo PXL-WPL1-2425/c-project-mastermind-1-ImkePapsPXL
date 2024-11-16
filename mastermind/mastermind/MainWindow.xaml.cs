@@ -46,6 +46,134 @@ namespace mastermind
             thirdColorCombo.ItemsSource = colorName;
             fourthColorCombo.ItemsSource = colorName;            
         }
+        private void FirstComboBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+            var comboBox = sender as System.Windows.Controls.ComboBox;
+            
+            string selectedColor = comboBox.SelectedItem.ToString();
+
+            switch (selectedColor)
+            {
+                case "Red":
+                    firstCodeLabel.Background = Brushes.Red;
+                    break;
+                case "Green":
+                    firstCodeLabel.Background = Brushes.Green;
+                    break;
+                case "White":
+                    firstCodeLabel.Background = Brushes.White;
+                    break;
+                case "Yellow":
+                    firstCodeLabel.Background = Brushes.Yellow;
+                    break;
+                case "Blue":
+                    firstCodeLabel.Background = Brushes.Blue;
+                    break;
+                case "Orange":
+                    firstCodeLabel.Background = Brushes.Orange;
+                    break;
+                default:
+                    firstCodeLabel.Background = Brushes.Gray; 
+                    break;
+            }           
+        }
+        private void SecondComboBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+            var comboBox = sender as System.Windows.Controls.ComboBox;
+            
+            string selectedColor = comboBox.SelectedItem.ToString();
+
+            switch (selectedColor)
+            {
+                case "Red":
+                    secondCodeLabel.Background = Brushes.Red;
+                    break;
+                case "Green":
+                    secondCodeLabel.Background = Brushes.Green;
+                    break;
+                case "White":
+                    secondCodeLabel.Background = Brushes.White;
+                    break;
+                case "Yellow":
+                    secondCodeLabel.Background = Brushes.Yellow;
+                    break;
+                case "Blue":
+                    secondCodeLabel.Background = Brushes.Blue;
+                    break;
+                case "Orange":
+                    secondCodeLabel.Background = Brushes.Orange;
+                    break;
+                default:
+                    secondCodeLabel.Background = Brushes.Gray;
+                    break;
+            }
+        }
+        private void ThirdComboBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+            var comboBox = sender as System.Windows.Controls.ComboBox;
+            string selectedColor = comboBox.SelectedItem.ToString();
+
+            switch (selectedColor)
+            {
+                case "Red":
+                    thirdCodeLabel.Background = Brushes.Red;
+                    break;
+                case "Green":
+                    thirdCodeLabel.Background = Brushes.Green;
+                    break;
+                case "White":
+                    thirdCodeLabel.Background = Brushes.White;
+                    break;
+                case "Yellow":
+                    thirdCodeLabel.Background = Brushes.Yellow;
+                    break;
+                case "Blue":
+                    thirdCodeLabel.Background = Brushes.Blue;
+                    break;
+                case "Orange":
+                    thirdCodeLabel.Background = Brushes.Orange;
+                    break;
+                default:
+                    thirdCodeLabel.Background = Brushes.Gray;
+                    break;
+            }
+        }
+        private void FourthComboBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+            var comboBox = sender as System.Windows.Controls.ComboBox;
+            
+            string selectedColor = comboBox.SelectedItem.ToString();
+
+            switch (selectedColor)
+            {
+                case "Red":
+                    fourthCodeLabel.Background = Brushes.Red;
+                    break;
+                case "Green":
+                    fourthCodeLabel.Background = Brushes.Green;
+                    break;
+                case "White":
+                    fourthCodeLabel.Background = Brushes.White;
+                    break;
+                case "Yellow":
+                    fourthCodeLabel.Background = Brushes.Yellow;
+                    break;
+                case "Blue":
+                    fourthCodeLabel.Background = Brushes.Blue;
+                    break;
+                case "Orange":
+                    fourthCodeLabel.Background = Brushes.Orange;
+                    break;
+                default:
+                    fourthCodeLabel.Background = Brushes.Gray;
+                    break;
+            }
+        }
+        private void CheckCodeButton_Click(object sender, RoutedEventArgs e)
+        {
+            CheckCode();            
+        }
+
         
 
     }
