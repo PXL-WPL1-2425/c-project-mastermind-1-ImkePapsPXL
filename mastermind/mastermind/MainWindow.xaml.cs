@@ -174,7 +174,36 @@ namespace mastermind
             CheckCode();            
         }
 
-        
+        private void CheckCode()
+        {
+            var userSelection = new string[4];
+            userSelection[0] = firstColorCombo.SelectedItem?.ToString();
+            userSelection[1] = secondColorCombo.SelectedItem?.ToString();
+            userSelection[2] = thirdColorCombo.SelectedItem?.ToString();
+            userSelection[3] = fourthColorCombo.SelectedItem?.ToString();
+
+            UpdateLabelFeedback(firstCodeLabel, userSelection[0], randomColors[0], 0);
+            UpdateLabelFeedback(secondCodeLabel, userSelection[1], randomColors[1], 1);
+            UpdateLabelFeedback(thirdCodeLabel, userSelection[2], randomColors[2], 2);
+            UpdateLabelFeedback(fourthCodeLabel, userSelection[3], randomColors[3], 3);
+
+        }
+
+        private void UpdateLabelFeedback(Label label, string userColor, int correctColorIndex, int position)
+        {
+            if (userColor == colorName[correctColorIndex])
+            {
+                label.BorderBrush = Brushes.DarkRed;
+            }
+            else if (colorName.Contains(userColor) && randomColors.Contains(Array.IndexOf(colorName, userColor)))
+            {            
+                label.BorderBrush = Brushes.Wheat;
+            }
+            else
+            {
+                label.BorderBrush = Brushes.Gray;
+            }
+        }
 
     }
 }
