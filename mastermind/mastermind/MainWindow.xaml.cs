@@ -39,6 +39,14 @@ namespace mastermind
             this.Title = $"{colorName[randomColors[0]].ToString()}, {colorName[randomColors[1]].ToString()}, {colorName[randomColors[2]].ToString()}, {colorName[randomColors[3]].ToString()}";
 
         }
+       private void ComboBoxItems()
+        {
+            firstColorCombo.ItemsSource = colorName;
+            secondColorCombo.ItemsSource = colorName;
+            thirdColorCombo.ItemsSource = colorName;
+            fourthColorCombo.ItemsSource = colorName;            
+        }
+        
 
     }
 }
